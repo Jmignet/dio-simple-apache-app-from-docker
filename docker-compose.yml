@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  apache-sever:
+    image: httpd
+    container_name: simple_apache_app
+    ports:
+      - "80:80"
+    volumes:
+      - ./site:/usr/local/apache2/htdocs
